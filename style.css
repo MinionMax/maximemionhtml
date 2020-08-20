@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #0f0e0e;
+}
+
+.container{
+    text-align: center;
+    margin-top: 200px;
+    overflow: hidden;
+}
+
+button{
+    background: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-family: "gill sans";
+    cursor: pointer;
+    margin: 10px;
+    transition: 0.8s;
+    position: relative;
+    overflow: hidden;
+    width: 200px
+}
+
+.btn1{
+    color: #ff0000;
+    border-color: #ff0000 ;
+}
+
+.btn2{
+    color: white;
+}
+
+.btn3{
+    color: #1DB954;
+    border-color: #1DB954;
+}
+
+.btn4{
+    color: #fff;
+}
+
+.btn1:hover{
+    color: white;
+}
+
+.btn2:hover{
+    color: #fff;
+}
+
+.btn3:hover{
+    color: #191414;
+}
+
+.btn4:hover{
+    color: #3498db;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: #3498db;
+    z-index: -1;
+    transition: 0.8s
+}
+
+.btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    background: #ff0000;
+}
+
+.btn3::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+    background:#1DB954;
+}
+
+.btn2::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%,
+     #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.btn4::before{
+    bottom: 0;
+    border-radius: 50% 50% 0 0;
+}
+
+.btn1:hover::before, .btn2:hover::before, .btn3:hover::before, .btn4:hover::before{
+    height: 180%;
+}
+
+
+h1{
+    color: white;
+    font-family: "dk lemon yellow sun";
+    font-size: 400%;
+    text-align: center;
+    margin-top: 140px;
+    font-weight: 100;
+}
+
