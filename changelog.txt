@@ -1,0 +1,8 @@
+- added Buttons with animation/links
+- added YT embed
+- added title icon
+- added nav Bar
+- added fixed nav Bar
+- added responsive embed
+- redesigned title
+- added nav Bar gradient
