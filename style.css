@@ -1,12 +1,3 @@
-@font-face{
-    font-family: "dk lemon yellow sun";
-    src: url(/fonts/DK_Lemon_Yellow_Sun.otf) format("otf");
-}
-
-@font-face{
-    font-family: "tex gyre adventor";
-    src: url(/fonts/texgyreadventor-regular.otf) format("otf");
-}
 
 body{
     margin: 0;
@@ -34,7 +25,7 @@ h3{
 }
 
 li a{
-    font-family: "tex gyre adventor";
+    font-family: "gill sans";
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -91,7 +82,7 @@ button{
     color: black;
     padding: 10px 20px;
     font-size: 20px;
-    font-family: "tex gyre adventor";
+    font-family: "gill sans";
     cursor: pointer;
     margin: 10px;
     transition: 150ms;
