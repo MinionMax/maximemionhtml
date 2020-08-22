@@ -6,3 +6,7 @@
 - added responsive embed
 - redesigned title
 - added nav Bar gradient
+- implemented fonts
+- added footer
+- remove border transition
+- fixed scroll bar

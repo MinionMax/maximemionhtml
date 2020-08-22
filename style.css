@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');/* font: Indie Flower, Lato */
 
 body{
     margin: 0;
     padding: 0;
     background-color: #151518;
+    overflow-x: hidden
 }
 
 *{
@@ -94,36 +93,53 @@ button{
     border-radius: 50px;
     text-decoration: none;
     font-size: medium;
+    border-style: solid;
 }
 
 .btn1{
-    color: #ff0000;
-    border-color: #ff0000 ;
+    color: hsl(0, 100%, 63%);
+    border-color: hsl(0, 100%, 63%) ;
+    -webkit-transition: border-color 150ms linear; /* Saf3.2+, Chrome */
+     -moz-transition: border-color 150ms linear; /* FF3.7+ */
+       -o-transition: border-color 150ms linear; /* Opera 10.5 */
+          transition: border-color 150ms linear;
 }
 
 .btn2{
     color: white;
+    -webkit-transition: border-color 150ms linear; /* Saf3.2+, Chrome */
+     -moz-transition: border-color 150ms linear; /* FF3.7+ */
+       -o-transition: border-color 150ms linear; /* Opera 10.5 */
+          transition: border-color 150ms linear;
 }
 
 .btn3{
     color: #1DB954;
     border-color: #1DB954;
+    -webkit-transition: border-color 150ms linear; /* Saf3.2+, Chrome */
+     -moz-transition: border-color 150ms linear; /* FF3.7+ */
+       -o-transition: border-color 150ms linear; /* Opera 10.5 */
+          transition: border-color 150ms linear;
 }
 
 .btn4{
     color: #fff;
+    
 }
 
 .btn1:hover{
     color: white;
+    border-color: rgba(0,0,0,0);
 }
 
 .btn2:hover{
     color: #fff;
+    border-color: rgba(0,0,0,0);
 }
 
 .btn3:hover{
     color: #191414;
+    border-color: rgba(0,0,0,0);
 }
 
 
@@ -142,7 +158,7 @@ button{
 .btn1::before{
     top: 0;
     border-radius: 0 0 50% 50%;
-    background: #ff0000;
+    background: hsl(0, 100%, 63%);
 }
 
 .btn3::before{
@@ -189,7 +205,7 @@ h1{
 
 }
 
-p{
+.subtitle{
     color: white;
     font-family: "Indie Flower";
     font-size: 100%;
@@ -235,4 +251,28 @@ iframe{
 
 .notHeader{
     margin-top: 200px;
+}
+
+h4{
+    position: relative;
+    border-style: solid;
+    border-color: rgba(143, 143, 143, 0.384);
+    width: 100%;
+    border-width: 1px;
+
+}
+
+.abtw{
+    list-style: none;
+    text-align: center;
+    font-family: "indie flower";
+    color: rgb(143, 143, 143);
+    cursor: pointer;
+}
+
+.end{
+    list-style: none;
+    text-align: center;
+    font-family: "indie flower";
+    color: rgba(143, 143, 143, 0.219); 
 }
