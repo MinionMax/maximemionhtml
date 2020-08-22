@@ -326,7 +326,7 @@ iframe{
         text-align: center;
         margin-top: 30px;
         margin-bottom: 80px;
-        font-size: 120%;
+        font-size: 100%;
     }
 
     h3{
@@ -363,6 +363,9 @@ iframe{
     .btn4{
         color: #fff;
         font-size: 80%;
+        width: 100%;
+        padding: 10px 15px;
+        margin: auto;
     }
 
     h2{
