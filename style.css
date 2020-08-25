@@ -251,7 +251,7 @@ iframe{
     padding-bottom: 56.25%;
     position: relative;
     margin: auto;
-    margin-bottom: 150px;
+    margin-bottom: 75px;
 
 }
 
@@ -259,7 +259,6 @@ iframe{
     position: absolute;
     width: 100%;
     height: 100%;
-   
 }
 
 /* footer */
@@ -297,7 +296,6 @@ section{
     color: #fff;
     font-family: "josefin sans";
     max-width: 100%;
-
 }
 
 section .content h5{
@@ -306,16 +304,9 @@ section .content h5{
     padding: 0;
     display: block;
     font-size: 200%;
-    transition: 0.5s;
-    transform-origin: left;
-    transform: scaleX(1);
-    width: 100%;
-    border: none;
-    border-color: #41b660;
-    border-style: solid;
-    overflow: hidden;
-    padding: 5px 5px;
-    background-color: #41b660;
+    transition: 1s;
+    padding: 10px 10px;
+    z-index: 3;
 }
 
 section .content h5::before{
@@ -323,10 +314,11 @@ section .content h5::before{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0%;
     height: 100%;
     background:#41b660;
-    transition: all 0.5s ease-in ;
+    transition: all 1s ease-in ;
+    z-index: -1;
 }
 
 section .content h6{
@@ -336,15 +328,7 @@ section .content h6{
     display: block;
     font-size: 150%;
     transition: 0.5s;
-    transform-origin: right;
-    transform: scaleX(1);
-    border: none;
-    border-color: #bd666c;
-    border-style: solid;
-    overflow: hidden;
-    padding: 5px 5px;
-    background-color: #bd666c;
-    width: 100%;
+    padding: 10px 10px;
 }
 
 section .content h6::before{
@@ -352,28 +336,27 @@ section .content h6::before{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 0%;
     height: 100%;
     background:#bd666c;
-    transition: all 0.5s ease-in ;
-    transform: scaleX(5);
-    z-index: 3;
-
+    transition: all 1s ease-in ;
+    z-index: -1;
+    
 }
 
 section .content p{
     font-weight: 20;
-    transition: all 0.5s ease-in;
+    transition: all 1s ease-in;
     font-size: 120%;
-    
+    line-height: 30px;
 }
 
 section .content h5[data-scroll="in"]::before{
-    transform: scaleX(0);
+    width: 100%;
 }
 
 section .content h6[data-scroll="in"]::before{
-    transform: scaleX(0);
+    width: 100%
 }
 
 
