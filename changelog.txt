@@ -10,3 +10,4 @@
 - added footer
 - remove border transition
 - fixed scroll bar
+- added abt section with animation

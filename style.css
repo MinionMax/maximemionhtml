@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&display=swap');/* font: Indie Flower, Lato */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Josefin+Sans:wght@300;400&display=swap');/* font: Indie Flower, Josefin Sans */
+
+/* rules */
+*{
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
 
 body{
     margin: 0;
@@ -7,10 +13,7 @@ body{
     overflow-x: hidden
 }
 
-*{
-    text-decoration: none;
-}
-
+/* nav-bar */
 .container{
     text-align: center;
     margin-top: 100px;
@@ -27,7 +30,7 @@ h3{
 }
 
 li a{
-    font-family: "lato";
+    font-family: "josefin sans";
     font-weight: 500;
     font-size: 16px;
     color: white;
@@ -45,6 +48,10 @@ li a{
     z-index: 5;
     width: 80%;
     background-image: linear-gradient(180deg, black, transparent);
+}
+
+.notHeader{
+    margin-top: 200px;
 }
 
 .nav_links{
@@ -72,18 +79,20 @@ li a{
     cursor: pointer;
     transition: all 0.3s ease 0s;
     width: 150px;
+    height: 40px;
 }
 
 .btn4:hover{
     background-color: rgba(0,136,169,0.8);
 }
 
+/* Link Buttons */
 button{
     background: none;
     color: black;
     padding: 10px 20px;
     font-size: 20px;
-    font-family: "lato";
+    font-family: "josefin sans";
     cursor: pointer;
     margin: 10px;
     transition: 150ms;
@@ -94,6 +103,11 @@ button{
     text-decoration: none;
     font-size: medium;
     border-style: solid;
+}
+
+input[type="button"]{
+    border: none;
+    outline:none;
 }
 
 .btn1{
@@ -141,8 +155,6 @@ button{
     border-color: rgba(0,0,0,0);
 }
 
-
-
 .btn::before{
     content: "";
     position: absolute;
@@ -182,6 +194,7 @@ button{
     height: 180%;
 }
 
+/* Fat Name/Subtitle */
 h1{
     color: white;
     font-family: "Indie Flower";
@@ -204,6 +217,7 @@ h1{
 
 }
 
+/* Latest Upload */ 
 .subtitle{
     color: white;
     font-family: "Indie Flower";
@@ -248,10 +262,7 @@ iframe{
    
 }
 
-.notHeader{
-    margin-top: 200px;
-}
-
+/* footer */
 .line{
     position: relative;
     border-style: solid;
@@ -275,8 +286,100 @@ iframe{
     color: rgba(143, 143, 143, 0.219); 
 }
 
-/* CSS for phones etc */
+/* About Section */
+section{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "josefin sans";
+    max-width: 100%;
 
+}
+
+section .content h5{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    font-size: 200%;
+    transition: 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+    width: 100%;
+    border: none;
+    border-color: #41b660;
+    border-style: solid;
+    overflow: hidden;
+    padding: 5px 5px;
+    background-color: #41b660;
+}
+
+section .content h5::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#41b660;
+    transition: all 0.5s ease-in ;
+}
+
+section .content h6{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+    display: block;
+    font-size: 150%;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(1);
+    border: none;
+    border-color: #bd666c;
+    border-style: solid;
+    overflow: hidden;
+    padding: 5px 5px;
+    background-color: #bd666c;
+    width: 100%;
+}
+
+section .content h6::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:#bd666c;
+    transition: all 0.5s ease-in ;
+    transform: scaleX(5);
+    z-index: 3;
+
+}
+
+section .content p{
+    font-weight: 20;
+    transition: all 0.5s ease-in;
+    font-size: 120%;
+    
+}
+
+section .content h5[data-scroll="in"]::before{
+    transform: scaleX(0);
+}
+
+section .content h6[data-scroll="in"]::before{
+    transform: scaleX(0);
+}
+
+
+
+
+/* CSS for phones etc */
 @media screen and (max-width: 481px){
 
     h1{
@@ -305,7 +408,7 @@ iframe{
         color: black;
         padding: 10px 20px;
         font-size: 20px;
-        font-family: "lato";
+        font-family: "josefin sans";
         cursor: pointer;
         margin: 10px;
         transition: 150ms;
@@ -352,7 +455,7 @@ iframe{
     }
 
     li a{
-        font-family: "lato";
+        font-family: "josefin sans";
         font-weight: 500;
         font-size: 80%;
         color: white;
@@ -400,4 +503,5 @@ iframe{
         color: rgba(143, 143, 143, 0.219); 
         font-size: 80%;
     }
+
 }
