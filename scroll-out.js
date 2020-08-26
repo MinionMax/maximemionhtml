@@ -1,3 +1,6 @@
+//code from github.com/scroll-out/scroll-out/blob/master/dist/scroll-out.js
+//I mean do I look like I could code this?
+
 var ScrollOut = (function () {
     'use strict';
   

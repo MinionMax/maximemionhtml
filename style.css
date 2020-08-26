@@ -298,6 +298,11 @@ section{
     max-width: 100%;
 }
 
+section .content .whitespaceabt{
+    height: 100px;
+    /* this acts as a placeholder for the scroll link */
+}
+
 section .content h5{
     position: relative;
     margin: 0;
@@ -327,7 +332,7 @@ section .content h6{
     padding: 0;
     display: block;
     font-size: 150%;
-    transition: 0.5s;
+    transition: 1s;
     padding: 10px 10px;
 }
 
@@ -349,6 +354,8 @@ section .content p{
     transition: all 1s ease-in;
     font-size: 120%;
     line-height: 30px;
+    margin-top: 50px;
+    opacity: 0;
 }
 
 section .content h5[data-scroll="in"]::before{
@@ -359,7 +366,37 @@ section .content h6[data-scroll="in"]::before{
     width: 100%
 }
 
+section .content p[data-scroll="in"]{
+    margin-top: 0;
+    opacity: 100%;
+}
 
+section .content h7{
+    position: relative;
+    margin-bottom: 20px;
+    padding: 0;
+    display: block;
+    font-size: 150%;
+    transition: 1s;
+    padding: 10px 10px;
+    margin-top: 100px;
+}
+
+section .content h7::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background:#fdc784;
+    transition: all 1s ease-in ;
+    z-index: -1;
+}
+
+section .content h7[data-scroll="in"]::before{
+    width: 100%
+}
 
 
 /* CSS for phones etc */
