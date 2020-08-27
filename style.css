@@ -20,16 +20,22 @@ body{
     overflow: hidden;
 }
 
-h3{
+.MM{
     color: white;
     font-family: "Indie Flower";
-    font-weight: 100;
+    
     letter-spacing: 5px;
     cursor: pointer;
+    justify-content: flex-start;
     margin-right: auto;
+    flex-grow: 1;
 }
 
-li a{
+.MM h3{
+    font-weight: 100;
+}
+
+li .navanch{
     font-family: "josefin sans";
     font-weight: 500;
     font-size: 16px;
@@ -45,7 +51,7 @@ li a{
     align-items: center;
     padding: 30px 10%;
     position: fixed;
-    z-index: 5;
+    z-index: 10000;
     width: 80%;
     background-image: linear-gradient(180deg, black, transparent);
 }
@@ -63,11 +69,11 @@ li a{
     padding: 0px 20px;
 }
 
-.nav_links li a{
+.nav_links li .navanch{
     transition: all 200ms ease 0s
 }
 
-.nav_links li a:hover{
+.nav_links li .navanch:hover{
     color: #0088a9
 }
 
@@ -243,6 +249,7 @@ iframe{
     margin-top: 40px;
     margin-bottom: 100px;
     border: none;
+    border-radius: 50px;
 }
 
 .responsive{
@@ -259,6 +266,10 @@ iframe{
     position: absolute;
     width: 100%;
     height: 100%;
+}
+
+.playbutton{
+    scale: 500%;
 }
 
 /* footer */
@@ -380,23 +391,76 @@ section .content h7{
     transition: 1s;
     padding: 10px 10px;
     margin-top: 100px;
+    border: none;
+    border-color: #151518;
+    border-style: solid;
+    overflow: hidden;
+    left: 1;
+    width: 100%;
+    background-color: #fdc784;
 }
 
 section .content h7::before{
     content: "";
     position: absolute;
     top: 0;
+    justify-items: end;
     left: 0;
-    width: 0%;
-    height: 100%;
-    background:#fdc784;
+    width: 100%;
+    height: 110%;
+    background:#151518;
     transition: all 1s ease-in ;
-    z-index: -1;
+    z-index: 5;
 }
 
 section .content h7[data-scroll="in"]::before{
-    width: 100%
+    width: 0;
 }
+
+/* Contact */
+
+.contact{
+    display: flex;
+    position: relative;
+    text-align: center;
+    transition: 500ms;
+
+}
+
+.contact[data-scroll="in"]{
+    opacity: 100%;
+}
+
+.hand{
+    position: absolute;
+    scale: 30%;
+    animation: infinite hand 1.5s steps(2);
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    
+}
+
+@keyframes hand{
+    from{
+        transform: rotate(0)
+    }
+
+    to{
+        transform: rotate(30deg)
+    }
+}
+
+.email{
+    display: inline-block;
+    color: #fff;
+    font-family: "Josefin Sans";
+    font-size: 200%;
+    vertical-align: middle;
+    justify-content: start;
+    
+}
+
 
 
 /* CSS for phones etc */

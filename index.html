@@ -21,12 +21,12 @@
         
         <header class="header">
 
-            <h3>Maxime Mion</h3>
+            <a class="MM" href="#"><h3>Maxime Mion</h3></a>
     
             <nav>
                 <ul class="nav_links">
-                    <li><a href="#About">About Me</a></li>
-                    <li><a href="#">Projects</a></li>
+                    <li><a class="navanch" href="#About">About Me</a></li>
+                    <li><a class="navanch" href="#">Projects</a></li>
                 </ul>
             </nav>
     
@@ -60,9 +60,16 @@
                 <h2>latest upload</h2>
             
                 <iframe width="100" height="200"
-                src="https://www.youtube.com/embed/XrF-bO-bbws">
+                src="" id="iFrame">  
                 </iframe> 
-                
+                <div>
+                    <svg class="playbutton" id="playb" xmlns="http://www.w3.org/2000/svg"
+                     viewBox="0 0 24 24" width="24" height="24">
+                     <path fill="none" d="M0 0h24v24H0z"/>
+                     <path d="M12 22C6.477 22 2 17.523 2 12S6.477 2 12 2s10 4.477 10 10-4.477 10-10 10zM10.622
+                      8.415a.4.4 0 0 0-.622.332v6.506a.4.4 0 0 0 .622.332l4.879-3.252a.4.4 0 0 0 0-.666l-4.88-3.252z"/>
+                    </svg>
+                </div>
             </div>
 
             <section>
@@ -78,7 +85,7 @@
                     <p>I've always loved making music and I can't really remember not doing it either... <br>
                        So I haven't stopped since and I've been playing the piano since I was 5 picking up more and more Instruments as I went. <br>
                        In 2015 I appeared on The Voice Kids, advancing to the second round. Proceeding this I started making YouTube videos, covering songs by Ed Sheeran. <br>
-                       Through this I learned Video Editing and Music Production, both of which I actively do in my free time. <br>
+                       Through this I learned Video Editing and Music Production, both of which I still actively do in my free time. <br>
                        In 2017 I released my first ever project "Holding On EP" which I'm not too fond of, so please don't check it out... <br>
                        I participated in a classical music contest as a duo in 2019 and got to the final stage, where young musicians from all of Germany competed. <br>
                        This is also the year that I started getting into Jazz and experimental music. <br>
@@ -95,9 +102,17 @@
 
             <script type="text/javascript">
                 ScrollOut({
-                    targets: "h5, h6, p, h7"
+                    targets: "h5, h6, p, h7, .contact"
                 })
             </script>
+
+            <div class="contact">
+                
+                <p class="email"> <img class="hand" src="images/PinClipart.com_goodbye-clip-art_5487878.png" alt="">
+                    Say Hello and leave a message for me:
+                 <b>maxime.mion@gmail.com</b></p>
+            </div>
+            
     
             <!--do not cross the line (end of page)-->
             <h4 class="line"></h4>
